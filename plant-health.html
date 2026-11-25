@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Plant Health | AGRI-SCAN AI</title><link rel="stylesheet" href="styles.css"></head>
+<body><header><div class="brand">🌿 AGRI-SCAN <span>AI</span></div><nav><a class="" href="index.html">Home</a><a class="active" href="plant-health.html">Plant Health</a><a class="" href="disease-library.html">Disease Library</a><a class="" href="plant-encyclopedia.html">Plant Encyclopedia</a><a class="" href="care-guide.html">Care Guide</a><a class="" href="about.html">About</a></nav></header>
+<main>
+<div class="eyebrow">AI-powered leaf analysis</div><h1>Plant Health Scanner</h1>
+<p class="muted">Choose a clear image of a single leaf. The AI model will compare it with the image categories it was trained on.</p>
+<div class="card"><h2>Upload a leaf image</h2><input id="imageUpload" type="file" accept="image/*">
+<img id="preview" class="preview" alt="Selected leaf preview">
+<button class="btn" id="predictBtn" disabled>Analyse Leaf</button>
+<div id="status" class="muted" aria-live="polite">Select an image to begin.</div><div id="result" class="result"></div></div>
+<div class="notice"><b>Important:</b> This is an educational AI tool, not a professional plant-disease diagnosis. Results depend on the examples used to train the model. If the result looks uncertain, ask a gardening or agriculture expert.</div>
+</main><footer>AGRI-SCAN AI · Smart plant care powered by image classification</footer>
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
+<script src="app.js"></script></body></html>
